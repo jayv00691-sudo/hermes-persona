@@ -1453,12 +1453,14 @@ def inject_context(
                 "static_rules": static_rules,
                 "dynamic_rules": dynamic_rules,
             }
-            _PENDING_DEBUG_BLOCK = f"\n\n---\n{_debug_summary(
+            _PENDING_DEBUG_BLOCK = f"""
+---
+{_debug_summary(
                 modules, parts,
                 var_count=var_count,
                 config=config,
                 debug_context=debug_context,
-            )}"
+            )}"""
             if _translate_mode:
                 _PENDING_DEBUG_BLOCK += f"\n\n🔮 [转译结果]:\n{narrative}"
             _trace("inject_context", f"SET debug={debug_val!r} pending={len(_PENDING_DEBUG_BLOCK)} chars")
