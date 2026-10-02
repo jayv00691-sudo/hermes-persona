@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "session_id": "demo1",
+  "last_updated": "2026-10-02T17:38:58.518944",
+  "vectors": {},
+  "turn_counter": 1,
+  "vector_history": [
+    {
+      "turn": 1,
+      "session_id": "demo1",
+      "time": "2026-10-02T17:38:58.518977",
+      "vectors": {}
+    }
+  ]
+}
